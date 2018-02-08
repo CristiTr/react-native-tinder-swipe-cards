@@ -258,6 +258,7 @@ export default class SwipeCards extends Component {
       this.cardAnimation = null;
     }
       );
+    this.props.handleNope(this.state.card);
     this.props.cardRemoved(currentIndex[this.guid]);
   }
 
@@ -271,6 +272,7 @@ export default class SwipeCards extends Component {
       this.cardAnimation = null;
     }
       );
+    this.props.handleMaybe(this.state.card);
     this.props.cardRemoved(currentIndex[this.guid]);
   }
 
@@ -284,6 +286,7 @@ export default class SwipeCards extends Component {
       this.cardAnimation = null;
     }
       );
+    this.props.handleYup(this.state.card);
     this.props.cardRemoved(currentIndex[this.guid]);
   }
 
